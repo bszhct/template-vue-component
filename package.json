@@ -1,0 +1,68 @@
+{
+  "name": "@bszhct/template-vue-component",
+  "version": "1.0.0",
+  "description": "通用的 Vue 组件模板",
+  "scripts": {
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --name ComponentName --filename component-name --dest lib src/components/index.js"
+  },
+  "main": "src/component-name.umd.min.js",
+  "dependencies": {
+    "ant-design-vue": "1.4.10",
+    "axios": "0.19.1",
+    "vue": "2.6.11",
+    "vue-router": "3.1.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "4.1.2",
+    "@vue/cli-plugin-e2e-nightwatch": "4.1.2",
+    "@vue/cli-plugin-eslint": "4.1.2",
+    "@vue/cli-plugin-router": "4.1.2",
+    "@vue/cli-service": "4.1.2",
+    "@vue/eslint-config-standard": "4.0.0",
+    "@vuepress/plugin-back-to-top": "1.2.0",
+    "@vuepress/plugin-medium-zoom": "1.2.0",
+    "babel-eslint": "10.0.3",
+    "chromedriver": "79",
+    "eslint": "5.16.0",
+    "eslint-plugin-vue": "5.0.0",
+    "geckodriver": "1.19.1",
+    "lint-staged": "9.5.0",
+    "stylus": "0.54.7",
+    "stylus-loader": "3.0.2",
+    "vue-template-compiler": "2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "files": [
+    "lib"
+  ]
+}
