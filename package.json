@@ -9,7 +9,7 @@
     "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name ComponentName --filename component-name --dest lib src/components/index.js"
   },
-  "main": "src/component-name.umd.min.js",
+  "main": "lib/component-name.umd.min.js",
   "dependencies": {
     "ant-design-vue": "1.4.10",
     "axios": "0.19.1",
@@ -23,8 +23,6 @@
     "@vue/cli-plugin-router": "4.1.2",
     "@vue/cli-service": "4.1.2",
     "@vue/eslint-config-standard": "4.0.0",
-    "@vuepress/plugin-back-to-top": "1.2.0",
-    "@vuepress/plugin-medium-zoom": "1.2.0",
     "babel-eslint": "10.0.3",
     "chromedriver": "79",
     "eslint": "5.16.0",
