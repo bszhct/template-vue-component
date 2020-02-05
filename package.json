@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "通用的 Vue 组件模板",
   "scripts": {
-    "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
