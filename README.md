@@ -8,19 +8,25 @@
 ### 开发
 
 ```bash
+
 yarn dev
+
 ```
 
-### 打包文档
+### 打包
 
 ```bash
+
 yarn build
+
 ```
 
 ### 打包组件
 
 ```bash
+
 yarn build:lib
+
 ```
 
 ### 发布
@@ -28,5 +34,7 @@ yarn build:lib
 **发布前务必要打包，更新 CHANGELOG.md 和修改 package.json 中的版本号**
 
 ```bash
+
 npm publish
+
 ```
