@@ -1,6 +1,6 @@
 {
   "name": "@bszhct/template-vue-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "通用的 Vue 组件模板",
   "scripts": {
     "test:e2e": "vue-cli-service test:e2e",
