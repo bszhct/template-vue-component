@@ -1,16 +1,16 @@
 import Vue from 'vue'
 import Antd from 'ant-design-vue'
 import axios from 'axios'
-import App from '@/app.vue'
+import App from '@/app'
 import router from '@/router'
+import store from './store'
 import UiKit from '@/components'
-import LayoutCard from '@/components/layout-card'
+import LayoutBox from '@/components/layout-box'
 
 Vue.config.productionTip = false
 Vue.use(Antd)
 Vue.use(UiKit)
-
-Vue.component('layout-card', LayoutCard)
+Vue.component('layout-box', LayoutBox)
 
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 
@@ -18,5 +18,6 @@ Vue.prototype.$axios = axios
 
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')
