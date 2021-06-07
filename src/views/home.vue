@@ -1,8 +1,8 @@
 <template>
   <div class="home-view">
-    <layout-card title="组件" description="使用组件的详细描述。">
+    <layout-box title="组件" description="使用组件的详细描述。">
       <component-name></component-name>
-    </layout-card>
+    </layout-box>
   </div>
 </template>
 

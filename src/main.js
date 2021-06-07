@@ -7,6 +7,8 @@ import store from './store'
 import UiKit from '@/components'
 import LayoutBox from '@/components/layout-box'
 
+import 'ant-design-vue/dist/antd.min.css'
+
 Vue.config.productionTip = false
 Vue.use(Antd)
 Vue.use(UiKit)
